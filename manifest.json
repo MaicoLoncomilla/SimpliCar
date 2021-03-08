@@ -1,5 +1,6 @@
 {
   "short_name": "React App",
+  "proxy": "https://4my1q6hsyo.api.quickmocker.com",
   "name": "Create React App Sample",
   "icons": [
     {
