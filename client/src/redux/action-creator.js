@@ -12,7 +12,7 @@ const actionCreator = {
   GETCARS: 'GETCARS',
   getCars: function (alert) {
     return dispatch => {
-      const promise = axios.get(`https://4my1q6hsyo.api.quickmocker.com/product/`, header)
+      const promise = axios.get(`/product/`, header)
       this._dispatchPromise(promise, this.GETCARS, dispatch, 'cars', alert)
     }
   },
@@ -20,7 +20,7 @@ const actionCreator = {
   GETDETAILS: "GETDETAILS",
   getDetails: function(id){
     return dispatch => {
-      const promise = axios.get(`https://4my1q6hsyo.api.quickmocker.com/product/${id}`, header)
+      const promise = axios.get(`/product/${id}`, header)
       this._dispatchPromise(promise, this.GETDETAILS, dispatch)
     }
   },
@@ -28,7 +28,7 @@ const actionCreator = {
   SENDEMAIL: 'SENDEMAIL',
   sendEmail: function(data, alert) {
     return dispatch => {
-      const promise = axios.post(`https://4my1q6hsyo.api.quickmocker.com/lead/${data.product}`, data, header)
+      const promise = axios.post(`/lead/${data.product}`, data, header)
       this._dispatchPromise(promise, this.SENDEMAIL, dispatch, "email", alert)
     }
   },
