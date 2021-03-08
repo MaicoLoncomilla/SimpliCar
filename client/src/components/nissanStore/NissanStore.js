@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { useAlert } from 'react-alert';
 import api from '../../redux/action-creator';
 import { Parrafo } from '../../utils/components/P';
 
@@ -8,9 +9,11 @@ import Card from './cards/Card';
 import sContainer from '../../styles/container.module.css';
 import Loading from '../loading/Loading';
 
+
 export default function Store(){
 
   const cars = useSelector(state => state.cars)
+  const alert = useAlert()
   const { GETCARS } = api;
   const dispatch = useDispatch()
 
@@ -48,7 +51,7 @@ export default function Store(){
   }
   useEffect(() => {
     if(!cars.length){
-      dispatch(api.getCars())
+      dispatch(api.getCars(alert))
     }
   }, [dispatch, cars, GETCARS])
 

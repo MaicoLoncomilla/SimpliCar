@@ -2,17 +2,18 @@ import axios from 'axios';
 
 const header = {
   headers: { 
-    'Authorization': 'Bearer qwertyuiopasdfghjklzxcvbnm123456'
+    "Access-Control-Allow-Origin": "*",
+    'Authorization': 'Bearer qwertyuiopasdfghjklzxcvbnm123456',
   }
 }
 
 const actionCreator = {
 
   GETCARS: 'GETCARS',
-  getCars: function () {
+  getCars: function (alert) {
     return dispatch => {
-      const promise = axios.get('/product', header)
-      this._dispatchPromise(promise, this.GETCARS, dispatch, 'cars')
+      const promise = axios.get(`/product/`, header)
+      this._dispatchPromise(promise, this.GETCARS, dispatch, 'cars', alert)
     }
   },
 
@@ -35,7 +36,6 @@ const actionCreator = {
   _dispatchPromise: function (promise, type, dispatch, text, alert) {
     return promise
       .then(({ data }) => {
-        console.log(data)
         if(text === "cars"){
           return dispatch({ type: type, payload: data.results })
         }
@@ -46,9 +46,9 @@ const actionCreator = {
       })
       .catch(err => {
         if (err.response) {
-          alert(`Error! \n Status: ${err.response.status} \n ${err.response.data}`, { type: "error", timeout: 2500 });
+          alert.show(`Error! \n Status: ${err.response.status} \n ${err.response.data}`, { type: "error", timeout: 2500 });
         } else {
-          alert(`Error! ${err}`, { type: "error", timeout: 2500 });
+          alert.show(`Error! ${err}`, { type: "error", timeout: 2500 });
         }
       })
   }
