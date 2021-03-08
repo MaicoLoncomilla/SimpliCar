@@ -1,0 +1,98 @@
+.containerNissanHome {
+  position: relative;
+  height: 100%;
+  margin-top: -80px;
+} 
+.containerNissanHome img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.containerAbsolute {
+  position: absolute;
+  top: 40%;
+  max-width: 400px;
+  margin-left: 80px;
+  padding: 5px 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+.Links{
+  text-decoration: none;
+}
+.containerIngresar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 300px;
+  width: 100%;
+  margin: 10px 0px;
+  box-sizing: border-box;
+  background-color: var(--backgroundLogo);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+.containerIngresar h3{
+  font-size: 14px;
+}
+
+@media (min-width: 1200px){
+  .full {
+    display: block;
+  }
+  .tablet {
+    display: none;
+  }
+  .movil {
+    display: none;
+  }
+}
+
+@media(max-width: 1200px) {
+  .containerAbsolute{
+    top: 20%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .full {
+    display: none;
+  }
+  .tablet {
+    display: block;
+  }
+  .movil {
+    display: none;
+  }
+}
+
+@media(max-width: 400px) {
+  .full {
+    display: none;
+  }
+  .tablet {
+    display: none;
+  }
+  .movil {
+    display: block;
+  }
+}
+
+@media (max-width: 900px){
+  .containerAbsolute{
+    max-width: 300px;
+  }
+  .containerIngresar h3{
+    font-size: 12px;
+  }
+}
+@media (max-width: 425px){
+  .containerAbsolute {
+    max-width: 250px;
+    top: 30%;
+  }
+  .containerIngresar h3{
+    font-size: 12px;
+  }
+}

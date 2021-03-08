@@ -1,0 +1,79 @@
+.titleH3 {
+  color: #e4e4e3;
+  font-size: 20px;
+}
+
+.titleNissan {
+  color: #dde8e3;
+  font-size: 20px;
+  font-weight: bold;
+}
+.titleH1 {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.titleHomeH1 {
+  font-size: 40px;
+  color: var(--backgroundLogo);
+}
+
+.titleH4 {
+  color: #e4e4e3;
+}
+.countCars{
+  padding-left: 80px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #828282;
+  font-size: 14px;
+}
+
+.h4CarDetail {
+  color: var(--backgroundLogo);
+}
+
+.titleFooter {
+  color: #dde8e3;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.subTitleFooter,
+.subTitleFooterWithIcon {
+  color: #dde8e3;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+.H4copyRight{
+  color: #dde8e3;
+  font-size: 13px;
+  margin-top: 20px;
+  padding-left: 80px;
+}
+
+.titleRed {
+  color: var(--backgroundLogo);
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px){
+  .countCars {
+    padding-left: 10px;
+  }
+  .H4copyRight {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 900px){
+  .titleHomeH1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 425px){
+  .titleHomeH1 {
+    font-size: 22px;
+  }
+}

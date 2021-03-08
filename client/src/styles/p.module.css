@@ -1,0 +1,25 @@
+.parrafoHome {
+  color: #696a68;
+  font-size: 18px;
+}
+.parrafo {
+  font-size: 13px;
+  color: #cccccc;
+}
+.parrafoStore {
+  color: #cccccc;
+  font-size: 13px;
+  padding: 80px;
+}
+
+@media (max-width: 768px){
+  .parrafoStore {
+    padding: 80px 10px;
+  }
+}
+
+@media (max-width: 900px){
+  .parrafoHome {
+    font-size: 15px;
+  }
+}
