@@ -16,7 +16,7 @@ export default function NissanHome(){
   const apiKey = '4ae2636d8dfbdc3044bede63951a019b';
 
   useEffect(() => {
-    axios.get(`http://api.openweathermap.org/data/2.5/weather?q=londres&appid=${apiKey}`)
+    axios.get(`https://api.openweathermap.org/data/2.5/weather?q=londres&appid=${apiKey}`)
     .then(({data}) => setCities(data))
   }, [apiKey])
 
