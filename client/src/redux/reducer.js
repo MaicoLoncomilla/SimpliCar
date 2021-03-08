@@ -1,9 +1,4 @@
 import actionCreator from './action-creator';
-// import thunk from 'redux-thunk';
-// import { createStore, applyMiddleware } from 'redux';
-// import { persistStore, persistReducer } from 'redux-persist'
-// import { createLogger } from 'redux-logger';
-// import storage from 'redux-persist/es/storage'
 
 const { GETCARS, GETDETAILS, SENDEMAIL } = actionCreator
 
@@ -35,17 +30,3 @@ const reducer = (state = initialState, action) => {
   }
 }
 export default reducer
-// export default () => {
-//   const persistConfig = {
-//     key: 'root',
-//     storage,
-//   }
-//   const persistedReducer = persistReducer(persistConfig, reducer)
-
-//   const store = createStore(
-//     persistedReducer,
-//     applyMiddleware(thunk, createLogger())
-//   );
-//   const persistor = persistStore(store)
-//   return { store, persistor }
-// }
