@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/SimpliCar/static/css/main.863caf6e.chunk.css",
+    "main.js": "/SimpliCar/static/js/main.54605e7f.chunk.js",
+    "main.js.map": "/SimpliCar/static/js/main.54605e7f.chunk.js.map",
+    "runtime-main.js": "/SimpliCar/static/js/runtime-main.b20af20f.js",
+    "runtime-main.js.map": "/SimpliCar/static/js/runtime-main.b20af20f.js.map",
+    "static/css/2.53e6dcdf.chunk.css": "/SimpliCar/static/css/2.53e6dcdf.chunk.css",
+    "static/js/2.98f07d32.chunk.js": "/SimpliCar/static/js/2.98f07d32.chunk.js",
+    "static/js/2.98f07d32.chunk.js.map": "/SimpliCar/static/js/2.98f07d32.chunk.js.map",
+    "index.html": "/SimpliCar/index.html",
+    "static/css/2.53e6dcdf.chunk.css.map": "/SimpliCar/static/css/2.53e6dcdf.chunk.css.map",
+    "static/css/main.863caf6e.chunk.css.map": "/SimpliCar/static/css/main.863caf6e.chunk.css.map",
+    "static/js/2.98f07d32.chunk.js.LICENSE.txt": "/SimpliCar/static/js/2.98f07d32.chunk.js.LICENSE.txt",
+    "static/media/full.e577113b.jpg": "/SimpliCar/static/media/full.e577113b.jpg",
+    "static/media/movil.47656cda.jpg": "/SimpliCar/static/media/movil.47656cda.jpg",
+    "static/media/tablet.58b586b5.jpg": "/SimpliCar/static/media/tablet.58b586b5.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b20af20f.js",
+    "static/css/2.53e6dcdf.chunk.css",
+    "static/js/2.98f07d32.chunk.js",
+    "static/css/main.863caf6e.chunk.css",
+    "static/js/main.54605e7f.chunk.js"
+  ]
+}
