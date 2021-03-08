@@ -37,7 +37,7 @@ export default function CarDetails(){
       {!details ? <Loading /> :
         <div>
           <div className={sContainer.containerLinkVolver}>
-            <Link to="/store" className={sContainer.Links}>
+            <Link to="/SimpliCar/store" className={sContainer.Links}>
               <div className={sContainer.containerVolver}>
                 <ArrowBackIcon />
                 <H4 title={"VOLVER A LA TIENDA"} style={{ marginRight: 5 }} s={"h4CarDetail"} />

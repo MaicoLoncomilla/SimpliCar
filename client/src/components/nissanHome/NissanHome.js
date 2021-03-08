@@ -25,7 +25,7 @@ export default function NissanHome(){
       <div className={sContainer.containerAbsolute}>
         <H1 title={"AHORA ES ONLINE"} s={'titleHomeH1'}/>
         <PNissanHome s={"parrafoHome"} parrafo={"Con Nissan Store, podés acceder a tu nuevo 0km con todos los servicios asociados desde la comodidad de tu sofá. Probanos!"}/>
-        <Link to="/store" className={sContainer.Links}>
+        <Link to="/SimpliCar/store" className={sContainer.Links}>
           <div className={sContainer.containerIngresar}>
             <H3 title={"INGRESAR A NISSAN STORE"}/>
             <ArrowForwardIcon/>

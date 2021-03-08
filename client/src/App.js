@@ -12,13 +12,13 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route path="/" render={() => (
+        <Route path="/SimpliCar/" render={() => (
           <>
-          <Route path="/" component={Header}/>
-          <Route exact path="/" component={NissanHome}/>
-          <Route exact path="/store" component={NissanStore}/>
-          <Route exact path="/detail/:id" component={CarDetails}/>
-          <Route path="/" component={Footer}/>
+          <Route path="/SimpliCar/" component={Header}/>
+          <Route exact path="/SimpliCar/" component={NissanHome}/>
+          <Route exact path="/SimpliCar/store" component={NissanStore}/>
+          <Route exact path="/SimpliCar/detail/:id" component={CarDetails}/>
+          <Route path="/SimpliCar/" component={Footer}/>
           </>
         )}/>
       </Switch>

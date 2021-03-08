@@ -19,7 +19,7 @@ export default function Card({ el, index }) {
           <H4 title={`US$ ${el.amount}`} />
         </div>
         <hr style={{color: "#edecec"}}/>
-        <Link to={`/detail/${index}`} className={sCard.Links}>
+        <Link to={`/SimpliCar/detail/${index}`} className={sCard.Links}>
           <div className={sCard.containerVerDetalle}>
             <H4 title={"VER DETALLES DE MODELO"}/>
             <ArrowForwardIcon/>
