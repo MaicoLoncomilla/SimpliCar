@@ -2,7 +2,6 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://4my1q6hsyo.api.quickmocker.com",
   "author": {
     "name": "Maico Loncomilla"
   },
