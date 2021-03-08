@@ -2,6 +2,7 @@ import axios from 'axios';
 
 const header = {
   headers: { 
+    "Accept": "application/json",
     "Access-Control-Allow-Origin": "*",
     'Authorization': 'Bearer qwertyuiopasdfghjklzxcvbnm123456',
   }
@@ -45,6 +46,7 @@ const actionCreator = {
         dispatch({ type: type, payload: data })
       })
       .catch(err => {
+        console.log(err)
         if (err.response) {
           alert.show(`Error! \n Status: ${err.response.status} \n ${err.response.data}`, { type: "error", timeout: 2500 });
         } else {
